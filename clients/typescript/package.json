@@ -1,0 +1,47 @@
+{
+  "name": "yuclase-client",
+  "version": "1.0.0",
+  "description": "TypeScript/JavaScript client for Yuclase queue service",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "example": "node examples/basic.js",
+    "example-ts": "ts-node examples/basic.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "queue",
+    "message-queue",
+    "yuclase",
+    "typescript",
+    "client"
+  ],
+  "author": "Yuclase Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devyk100/yuclase.git",
+    "directory": "clients/typescript"
+  },
+  "bugs": {
+    "url": "https://github.com/devyk100/yuclase/issues"
+  },
+  "homepage": "https://github.com/devyk100/yuclase#readme",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/jest": "^29.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
